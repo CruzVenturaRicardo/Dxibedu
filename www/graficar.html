@@ -1,0 +1,68 @@
+
+
+        <script src="js/jquery-1.11.0.min.js" ></script>
+        <script src="js/highcharts.js" ></script>
+        <script src="js/themes/grid.js" ></script>
+        <script src="js/graficas.js" ></script>
+
+
+        <select id="entidad">
+            <option value="Team">TEMAS</option>
+		<option value="Mujdes">Mujeres Desaparecidas</option>
+            <option value="Homdes">Hombres Desaparecidos</option>
+            <option value="Mendes">Menores Desaparecidos</option>
+    </select>
+
+        <select id="anio">
+            <option value="all">All</option>
+			 <option value="1">2011</option>
+			  <option value="2">2012</option>
+			   <option value="3">2013</option>
+			   <option value="4">2014</option>
+        </select>
+	
+	<button id="enviar">Enviar</button>
+         <script>
+		 
+          var tabla="";
+		  var cons="";
+		  var anio="";
+		  $('#entidad').on("change" , function(){
+		  var etq=$( this ).val();
+		  console.log(etq);
+			switch (etq) { 
+			case "Mujdes":
+				   anio=$('#anio').val();
+				   if(anio !== 'all')
+				   	cons="SELECT desaparecido, fecha_rep FROM desaparecieron WHERE genero=1 and fecha_rep like %"+anio+"%";
+				   else
+				  cons="SELECT desaparecido, fecha_rep FROM desaparecieron WHERE genero=1";
+				   break;
+			case "Homdes":
+				  anio=$('#anio').val();
+				   if(anio !== 'all')
+				   	cons="SELECT desaparecido, fecha_rep FROM desaparecieron WHERE genero=2 and fecha_rep like '%"+anio+"%'";
+				   else
+				  cons="SELECT desaparecido, fecha_rep FROM desaparecieron WHERE genero=2";
+				   break;			
+			case "Mendes":
+					  anio=$('#anio').val();
+				   if(anio !== 'all')
+				    cons="SELECT desaparecido, edad, fecha_rep FROM desaparecieron WHERE edad<11 and fecha_rep like '%"+anio+"%'";
+				   else
+					cons="SELECT desaparecido,fecha_rep, edad FROM desaparecieron WHERE edad<11";				  
+					break;  				
+							}});	
+		  
+		  
+		  $('#enviar').on("click" , function(){
+				if(anio !== 'all')
+					getData(cons);
+				else
+					getDataAll(cons);
+			});
+		  		
+        </script>
+		<div id="resultados"></div>
+        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+       

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="cordova.js"></script>
+		<script src="cdv-plugin-fb-connect.js"></script>
+		<script src="facebook-js-sdk.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/fb.js"></script>
+		<script src="js/jquery-1.11.0.min.js"></script>
+    </head>
+	<body>
+		<button onclick="login()">Login</button>
+		<button onclick="me()">Me</button>
+		<!--<button onclick="getSession()">Get session</button>-->
+		<button onclick="getLoginStatus()">Get login</button>
+		<button onclick="logout()">Logout</button>
+		<button onclick="facebookWallPost()">facebookWallPost</button>
+		<button onclick="getPersonMjs()">friendstory</button>
+		<button onclick="checkin_riego()">Estoy en riesgo :( </button>
+		<a href="formulario.html">Formulario</a>
+		<button onclick="take_pic()">foto de denuncia </button>
+        
+        <div id="data">loading ...</div>
+        
+        <div id="fb-root"></div>
+        <img id="myImage"></img>
+        
+        <!-- cordova -->
+	    <!-- cordova facebook plugin -->
+	    
+		
+		
+        <div id="log"></div>
+	</body>
+</html>

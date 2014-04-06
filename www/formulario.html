@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Una aplicación dedicada a ayudar a regresar a casa a las personas que están desaparecidas."/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" type="image/x-icon" href="img/palomitas.ico" /> 
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<title>App | Hackathon</title>
+</head>
+
+<body>
+	<header>
+	<h1>MANTEN LA ESPERANZA</h1>
+	</header>
+
+	<section id="principal">
+			<h2>Registra aquí los datos de la persona que ha desaparecido | Nosotros te ayudamos :')</h2>
+
+			<form id="form_registro" name="form_registro" action="#" method="post"  accept-charset="utf-8">
+				<!-- CURP-->
+				<label for="curp">CURP</label>
+				<input type="text" id="curp" name="curp_txt" placeholder="Curp" title="Tu CURP" required />
+				
+				<!-- NOMBRE COMPLETO-->
+				<label for="nombre">Nombre completo</label>
+				<input type="text" id="nombre" name="nombre_txt" placeholder="Nombre Completo" title="Tu nombre" required />
+				
+				<!-- ESTATUS-->
+				<label for="l">Estatus: </label>
+					<input type="radio" id="l" name="estatus_rdo" title="Estatus" value="1" required />&nbsp;<label for="l">Localizado</label>
+					&nbsp;&nbsp;&nbsp;
+					<input type="radio" id="n" name="estatus_rdo" title="Estatus" value="2" required />&nbsp;<label for="n">No localizado</label>
+					<input type="radio" id="p" name="estatus_rdo" title="Estatus" value="3" required />&nbsp;<label for="n">Pendiente</label>
+
+				<!-- GENERO-->
+				<label for="m">Sexo: </label>
+					<input type="radio" id="m" name="sexo_rdo" title="Tu sexo" value="M" required />&nbsp;<label for="m">Masculino</label>
+					&nbsp;&nbsp;&nbsp;
+					<input type="radio" id="f" name="sexo_rdo" title="Tu sexo" value="F" required />&nbsp;<label for="f">Femenino</label>
+
+				<!-- MAYOR/MENOR EDAD
+					EDAD -->
+				<label for="edad">Edad: </label>
+				<input type="number" id="edad" name="edad_txt" placeholder="Escribe la edad" title="Edad" required/>
+
+				<!-- GRUPO-->
+				<label for="grupo">Grupo</label>
+				<select id="grupo" required>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				
+				<!--FECHA REPORTE-->	
+				<label for="reporte">Fecha de reporte: </label>
+				<input type="date" id="reporte" name="reporte_txt" title="Fecha de reporte" required/>
+
+				<!--FECHA CONCLUSIÓN-->	
+				<label for="conclusion">Fecha de conclusion: </label>
+				<input type="date" id="conclusion" name="conclusion_txt" title="Fecha de conclusion" required/>
+
+				<!-- NOMBRE COMPLETO-->
+				<label for="nombre_denunciante">Nombre denunciante</label>
+				<input type="text" id="nombre_denunciante" name="nombre_denunciante_txt" placeholder="Nombre Completo del Denunciante" title="Tu nombre" required />
+
+				<!-- MOTIVO-->
+				<label for="motivo">Motivo</label>
+				<select id="motivo" required>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>
+
+				<!-- DESCRIPCION-->
+				<label for="descipcion">Descripcion</label>
+				<textarea id="descipcion"></textarea>
+
+				<input type="submit" id="enviar-registro" name="enviar_btn" value="Guardar"/>
+
+			</form>
+
+	</section>
+
+	<footer>
+		<a href="#">Acerca de nosotros</a>
+		<br>
+		<a href="#">Admin</a>
+	</footer>	
+
+</body>
+
+</html>

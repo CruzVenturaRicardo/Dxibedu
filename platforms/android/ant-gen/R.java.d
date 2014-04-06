@@ -1,0 +1,19 @@
+/home/felix/NetBeansProjects/segurit/platforms/android/ant-gen/com/xd/segurit/R.java \
+ : /home/felix/NetBeansProjects/segurit/platforms/android/res/drawable-hdpi/icon.png \
+/home/felix/NetBeansProjects/segurit/platforms/android/res/drawable-ldpi/icon.png \
+/home/felix/NetBeansProjects/segurit/platforms/android/res/layout/activity_login.xml \
+/home/felix/NetBeansProjects/segurit/platforms/android/res/values-large/styles.xml \
+/home/felix/NetBeansProjects/segurit/platforms/android/res/values/styles.xml \
+/home/felix/NetBeansProjects/segurit/platforms/android/res/values/strings.xml \
+/home/felix/NetBeansProjects/segurit/platforms/android/res/values/strings_activity_login.xml \
+/home/felix/NetBeansProjects/segurit/platforms/android/res/menu/login.xml \
+/home/felix/NetBeansProjects/segurit/platforms/android/res/drawable-mdpi/icon.png \
+/home/felix/NetBeansProjects/segurit/platforms/android/res/drawable-xhdpi/icon.png \
+/home/felix/NetBeansProjects/segurit/platforms/android/res/xml/config.xml \
+/home/felix/NetBeansProjects/segurit/platforms/android/res/drawable/icon.png \
+/home/felix/NetBeansProjects/segurit/platforms/android/ant-build/res/drawable-hdpi/icon.png \
+/home/felix/NetBeansProjects/segurit/platforms/android/ant-build/res/drawable-ldpi/icon.png \
+/home/felix/NetBeansProjects/segurit/platforms/android/ant-build/res/drawable-mdpi/icon.png \
+/home/felix/NetBeansProjects/segurit/platforms/android/ant-build/res/drawable-xhdpi/icon.png \
+/home/felix/NetBeansProjects/segurit/platforms/android/ant-build/res/drawable/icon.png \
+/home/felix/NetBeansProjects/segurit/platforms/android/ant-build/AndroidManifest.xml \
